@@ -1,0 +1,16 @@
+{
+  "name": "babel-creed-async",
+  "version": "1.0.0",
+  "description": "Enable ES7 async functions using creed coroutines",
+  "main": "index.js",
+  "keywords": [
+    "babel",
+    "creed",
+    "async"
+  ],
+  "author": "brian@hovercraftstudios.com",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^5.8.24"
+  }
+}
