@@ -1,8 +1,8 @@
 # babel-creed-async
 
-Use ES7 [async functions](http://wiki.ecmascript.org/doku.php?id=strawman:async_functions) with [babel](https://babeljs.io) and [creed](https://github.com/briancavalier.creed).  This babel plugin turns ES7 async functions into creed coroutines.
+Use ES7 [async functions](http://wiki.ecmascript.org/doku.php?id=strawman:async_functions) with [babel](https://babeljs.io) and [creed](https://github.com/briancavalier/creed).  This babel plugin turns ES7 async functions into creed coroutines.
 
-Check out [an example](example).
+Check out [an example](https://github.com/briancavalier/babel-creed-async/example).
 
 ## Get it
 
