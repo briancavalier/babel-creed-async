@@ -2,10 +2,10 @@
   "name": "babel-creed-async-example",
   "version": "1.0.0",
   "description": "Example",
-  "main": "src.js",
+  "main": "out.js",
   "scripts": {
-    "build": "babel --plugins babel-creed-async -b regenerator -o index.js src.js",
-    "build-pkgjson": "babel -o index.js src.js"
+    "build": "babel --plugins babel-creed-async -b regenerator -o out.js src.js",
+    "build-pkgjson": "babel -o out.js src.js"
   },
   "babel": {
     "plugins": ["babel-creed-async"],
