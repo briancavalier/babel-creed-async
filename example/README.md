@@ -5,6 +5,7 @@ See `src.js` for a simple example of using ES7 `async` functions.  Building it w
 ## Build it
 
 ```
+npm install
 npm run build
 ```
 
