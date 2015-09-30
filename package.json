@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Enable ES7 async functions using creed coroutines",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "babel",
     "creed",
