@@ -7,7 +7,7 @@ Check out [an example](https://github.com/briancavalier/babel-creed-async/tree/m
 ## Get it
 
 ```
-npm install babel-creed-async
+npm install --save-dev babel-creed-async
 ```
 
 ## Command line
