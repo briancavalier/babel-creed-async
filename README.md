@@ -48,9 +48,11 @@ npm install --save creed
 
 ```js
 {
-    "plugins": ["transform-async-to-module-method", {
-      "module": "creed",
-      "method": "coroutine"
-    }]
+    "plugins": [
+      ["transform-async-to-module-method", {
+        "module": "creed",
+        "method": "coroutine"
+      }]
+    ]
 }
 ```
