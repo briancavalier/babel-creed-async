@@ -1,6 +1,6 @@
 # babel-creed-async
 
-**Note:** This plugin works with Babel 5.  It's not needed in Babel 6.  See [Babel 5](#babel-5) and [Babel 6](#babel-6) below for more info
+**Note:** This plugin is only compatible with Babel 5.  See [Babel 6](#babel-6) and [Babel 7](#babel-7) for instructions on how to use with these versions.
 
 Use ES7 [async functions](http://wiki.ecmascript.org/doku.php?id=strawman:async_functions) with [babel 5](https://babeljs.io) and [creed](https://github.com/briancavalier/creed).  This babel plugin turns ES7 async functions into creed coroutines.
 
@@ -23,7 +23,7 @@ Add `babel-creed-async` as a plugin and blacklist `regenerator`.
 babel --plugins babel-creed-async -b regenerator ...
 ```
 
-### babelrc
+### in .babelrc
 
 Add `babel-creed-async` as a plugin and blacklist `regenerator` in .babelrc or in the babel section of package.json.
 
@@ -36,7 +36,7 @@ Add `babel-creed-async` as a plugin and blacklist `regenerator` in .babelrc or i
 
 ## Babel 6
 
-You can use the [transform-async-to-module-method](http://babeljs.io/docs/plugins/transform-async-to-module-method/) plugin in Babel 6, instead of `babel-creed-async`.
+Instead of using this plugin, please use the [transform-async-to-module-method](http://babeljs.io/docs/plugins/transform-async-to-module-method/) plugin in Babel 6.
 
 ### Get creed
 
@@ -44,12 +44,36 @@ You can use the [transform-async-to-module-method](http://babeljs.io/docs/plugin
 npm install --save creed
 ```
 
-### babelrc
+### in .babelrc
 
 ```js
 {
     "plugins": [
       ["transform-async-to-module-method", {
+        "module": "creed",
+        "method": "coroutine"
+      }]
+    ]
+}
+```
+
+## Babel 7
+
+Instead of using this plugin, please use the [@babel/plugin-transform-async-to-generator](https://babeljs.io/docs/en/next/babel-plugin-transform-async-to-generator) plugin in Babel 7, 
+
+### installing
+
+```
+npm install --save creed
+npm install --save-dev @babel/plugin-transform-async-to-generator
+```
+
+### in .babelrc
+
+```js
+{
+    "plugins": [
+      ["@babel/plugin-transform-async-to-generator", {
         "module": "creed",
         "method": "coroutine"
       }]
